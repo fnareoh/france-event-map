@@ -1,0 +1,16 @@
+{
+  "name": "france-event-map",
+  "version": "1.0.0",
+  "description": "A webpage displaying a map of France with markers for future event locations",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm -F backend dev\" \"pnpm -F frontend dev\"",
+    "build": "pnpm -F backend build && pnpm -F frontend build",
+    "start": "pnpm -F backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "wait-on": "^7.0.1"
+  },
+  "packageManager": "pnpm@8.15.0"
+}
